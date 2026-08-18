@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -22,16 +23,20 @@ header {
 }
 
 
-/* Title and Navigation */
-
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+
 .header-content h1 {
     font-size: 32px;
+}
+
+
+.header-content p {
+    margin-top: 5px;
 }
 
 
@@ -41,38 +46,53 @@ nav {
     display: flex;
 }
 
+
 nav a {
     color: white;
     text-decoration: none;
-    margin-left: 25px;
-    font-size: 18px;
+    margin-left: 20px;
+    font-size: 17px;
 }
+
 
 nav a:hover {
     color: #4a90e2;
 }
 
 
-/* Main Sections */
+/* Sections */
 
 section {
     padding: 50px 10%;
     border-bottom: 1px solid #cccccc;
 }
 
+
 section h2 {
     color: #2c4f8c;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
+
 section h3 {
-    margin-top: 20px;
     margin-bottom: 10px;
 }
+
 
 section p {
     line-height: 1.6;
     margin-bottom: 15px;
+}
+
+
+/* Articles */
+
+article {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
 }
 
 
@@ -82,12 +102,13 @@ ul {
     margin-left: 20px;
 }
 
+
 li {
     margin-bottom: 8px;
 }
 
 
-/* Table */
+/* CV Table */
 
 table {
     width: 100%;
@@ -95,11 +116,13 @@ table {
     margin-top: 20px;
 }
 
+
 table,
 th,
 td {
     border: 1px solid #333;
 }
+
 
 th,
 td {
@@ -107,30 +130,20 @@ td {
     text-align: left;
 }
 
+
 th {
     background-color: #2c4f8c;
     color: white;
 }
 
 
-/* Projects */
-
-article {
-    background-color: white;
-    padding: 20px;
-    margin-top: 15px;
-    border-radius: 5px;
-    border: 1px solid #dddddd;
-}
-
-
-/* Gallery iframe */
+/* Iframe */
 
 iframe {
     width: 100%;
     height: 300px;
     border: 1px solid #cccccc;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 
@@ -139,13 +152,15 @@ iframe {
 form {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 600px;
 }
+
 
 label {
     margin-top: 10px;
     margin-bottom: 5px;
 }
+
 
 input,
 textarea {
@@ -155,14 +170,47 @@ textarea {
     margin-bottom: 10px;
 }
 
+
+/* Radio Buttons */
+
+.radio-group {
+    margin-bottom: 15px;
+}
+
+
+.radio-group input {
+    margin-right: 5px;
+}
+
+
+.radio-group label {
+    margin-right: 15px;
+}
+
+
+/* Checkbox */
+
+.checkbox-group {
+    margin-bottom: 15px;
+}
+
+
+.checkbox-group input {
+    margin-right: 5px;
+}
+
+
+/* Button */
+
 button {
     background-color: #2c4f8c;
     color: white;
     border: none;
     padding: 12px;
-    cursor: pointer;
     font-size: 16px;
+    cursor: pointer;
 }
+
 
 button:hover {
     background-color: #1d3766;
@@ -187,14 +235,12 @@ footer {
         padding: 20px;
     }
 
+
     .header-content {
         flex-direction: column;
+        text-align: center;
     }
 
-    .header-content h1 {
-        text-align: center;
-        font-size: 26px;
-    }
 
     nav {
         flex-wrap: wrap;
@@ -202,16 +248,26 @@ footer {
         margin-top: 15px;
     }
 
+
     nav a {
-        margin: 8px 12px;
-        font-size: 16px;
+        margin: 8px 10px;
+        font-size: 15px;
     }
+
 
     section {
         padding: 35px 7%;
     }
 
+
     table {
-        font-size: 14px;
+        font-size: 13px;
     }
+
+
+    th,
+    td {
+        padding: 8px;
+    }
+
 }
