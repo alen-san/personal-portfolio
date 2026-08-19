@@ -338,6 +338,17 @@ form textarea {
     font-weight: normal;
 }
 
+.error-msg {
+    color: #cc0000;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.error-msg.success {
+    color: #1e7d32;
+}
+
 button {
     background-color: #2c4f8c;
     color: white;
@@ -366,10 +377,55 @@ footer {
     margin-top: 30px;
 }
 
-
 /* =========================
-   MOBILE RESPONSIVE DESIGN
+   LIVE WEATHER
 ========================= */
+
+.weather-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.weather-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.weather-container input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.weather-container button {
+    margin-top: 15px;
+}
+
+#weather-result {
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.weather-info {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.weather-info img {
+    width: 80px;
+    height: 80px;
+}
+
+.weather-error {
+    color: #cc0000;
+    font-weight: bold;
+}
 
 @media (max-width: 768px) {
 
@@ -460,6 +516,29 @@ footer {
         flex-direction: column;
     }
 
+    .filter-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+    .filter-buttons button {
+        background-color: #2c4f8c;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .filter-buttons button:hover {
+        background-color: #1e3a6d;
+    }
+
+    .filter-buttons button.active {
+        background-color: #60a5fa;
+    }
 
     /* FORM MOBILE */
 
