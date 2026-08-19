@@ -51,39 +51,72 @@
             <h2>My Projects</h2>
 
 
-            <article>
+            <article class="project-card">
 
                 <h3>Library Management System</h3>
 
-                <p>
-                    A database-based application developed to manage
-                    books, members and borrowing records.
-                </p>
+                <button class="project-toggle">
+                    View Project Details
+                </button>
+
+                <div class="project-details">
+
+                    <p>
+                        A Library Management System developed using Oracle APEX.
+                        The project helps manage books, members and borrowing records.
+                    </p>
+
+                </div>
 
             </article>
 
 
-            <article>
+            <article class="project-card">
 
                 <h3>Ruban AI - Teachers Connect</h3>
 
-                <p>
-                    A project idea that aims to bridge the gap between
-                    rural and urban teaching using technology, AI-based
-                    assistance and collaborative learning features.
-                </p>
+                <button class="project-toggle">
+                    View Project Details
+                </button>
+                
+                <div class="project-details">
 
+                    <p>
+                        A project idea that aims to bridge the gap between
+                        rural and urban teaching using technology, AI-based
+                        assistance and collaborative learning features.
+                    </p>
+                </div>
             </article>
 
 
-            <article>
+            <article class="project-card">
 
                 <h3>Personal Portfolio Website</h3>
 
-                <p>
-                    A responsive personal portfolio website developed
-                    using HTML5 and CSS3.
-                </p>
+                <button class="project-toggle">
+                    View Project Details
+                </button>
+
+                <div class="project-details">
+
+                    <p>
+                        A responsive personal portfolio website developed
+                        using HTML5 and CSS3.
+                    </p>
+
+                </div>
+            </article>
+
+            <article>
+
+                <h3>My Articles</h3>
+
+                <p>Here are some recent technology articles I found interesting:</p>
+
+                <p id="articlesStatus">Loading articles...</p>
+
+                <ul id="articlesList"></ul>
 
             </article>
 
@@ -100,6 +133,8 @@
 
     </footer>
 
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
