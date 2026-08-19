@@ -55,7 +55,9 @@
                     <p class="welcome-text">
                         WELCOME TO MY WEBSITE
                     </p>
-
+                    
+                    <p id="greeting"></p>
+   
                     <h2>
                         Hi, I'm <span>Alen Sanjith</span>
                     </h2>
@@ -95,8 +97,30 @@
             </div>
 
         </section>
+    
+        <section id="weather">
 
+            <h2>Live Weather</h2>
+
+            <div class="weather-container">
+
+                <label for="city-input">Enter City:</label>
+
+                <input 
+                    type="text" 
+                    id="city-input" 
+                    placeholder="Enter city name"
+                >
+
+                <button id="weather-button">Get Weather</button>
+
+                <div id="weather-result"></div>
+
+            </div>
+
+        </section>
     </main>
+
 
     <footer>
 
@@ -105,7 +129,8 @@
         </p>
 
     </footer>
-
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
