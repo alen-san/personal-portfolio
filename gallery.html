@@ -50,16 +50,21 @@
 
             <h2>Activities and Gallery</h2>
 
-
             <article>
 
                 <h3>Academic Activities</h3>
 
-                <ul>
-                    <li>Digital 101 Course</li>
-                    <li>Fundamentals of Digital Marketing</li>
-                    <li>Academic Project Presentations</li>
-                    <li>Technical Activities and Workshops</li>
+                <div class="filter-buttons">
+                    <button class="filter-btn" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="course">Courses</button>
+                    <button class="filter-btn" data-filter="event">Events</button>
+                </div>
+
+                <ul id="activityList">
+                    <li class="activity-item" data-type="course">Digital 101 Course</li>
+                    <li class="activity-item" data-type="course">Fundamentals of Digital Marketing</li>
+                    <li class="activity-item" data-type="event">Academic Project Presentations</li>
+                    <li class="activity-item" data-type="event">Technical Activities and Workshops</li>
                 </ul>
 
             </article>
@@ -76,7 +81,7 @@
         </p>
 
     </footer>
-
+<script src="script.js"></script>
 </body>
 
 </html>
